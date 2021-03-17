@@ -4,36 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <header>
-        <div class="container page-header">
-            <nav class="nav">
-                <a href="./index.html" class="nav-logo"><span class="logo-part">Web</span>Studio</a>
+    <header class="page-header">
+        <div class="container page-header__container ">
+            <nav class="page-header__nav">
+                <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li class="element-nav"><a href="./index.html" class="nav-items">Студия</a></li>
-                    <li class="element-nav"><a href="./portfolio.html" class="nav-items current">Портфолио</a></li>
-                    <li class="element-nav"><a href="" class="nav-items">Контакты</a></li>
+                    <li class="nav-list__item"><a href="./index.html"
+                            class="nav-list__link">Студия</a></li>
+                    <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфолио</a></li>
+                    <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="nav-list">
-                <li class="element-nav">
-                    <a href="mailto:info@devstudio.com" class="nav-items contacts">
-                        <svg class="icon-contacts" width="16" height="12">
+                <li class="nav-list__item nav-list__item--end">
+                    <a href="mailto:info@devstudio.com" class="nav-list__link nav-list__link--color">
+                        <svg class="nav-list__icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="element-nav">
-                    <a href="tel:+380961111111" class="nav-items contacts">
-                        <svg class="icon-contacts" width="10" height="16">
+                <li class="nav-list__item nav-list__item--end">
+                    <a href="tel:+380961111111" class="nav-list__link nav-list__link--color">
+                        <svg class="nav-list__icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -210,49 +206,50 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container all-footer">
-            <div class="main-address">
-                <a href="" class="footer-logo"><span class="logo-part">Web</span>Studio</a>
-                <address class="footer-address">
-                    <p class="footer-item">г. Киев, пр-т Леси Украинки, 26</p>
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="page-footer__address">
+                <a href="" class="page-footer__logo"><span class="logo__part">Web</span>Studio</a>
+                <address class="address">
+                    <p class="address__item">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>
-                        <li class="footer-item">
-                            <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+                        <li class="address__item">
+                            <a href="mailto:info@devstudio.com"
+                                class="address__item address__item--color">info@devstudio.com</a>
                         </li>
-                        <li class="footer-item">
-                            <a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
+                        <li class="address__item">
+                            <a href="tel:+380961111111" class="address__item address__item--color">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="add-socials">
-                <h3 class="add-text">присоединяйтесь</h3>
-                <ul class="socials-list">
-                    <li class="socials-item">
-                        <a href="#" class="add-socials-link">
-                            <svg class="icon-socials">
+            <div class="page-footer__socials">
+                <h3 class="page-footer__heading">присоединяйтесь</h3>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--color">
+                            <svg class="socials__icon">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="add-socials-link">
-                            <svg class="icon-socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--color">
+                            <svg class="socials__icon">
                                 <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="add-socials-link">
-                            <svg class="icon-socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--color">
+                            <svg class="socials__icon">
                                 <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="add-socials-link">
-                            <svg class="icon-socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--color">
+                            <svg class="socials__icon">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -261,12 +258,13 @@
             </div>
             <div role="group" class="group">
                 <form class="form-subscribe">
-                    <div class="form-field">
-                        <label for="subscribe" class="add-text">Подпишитесь на рассылку</label>
-                        <input type="text" class="form-input" name="subscribe" id="subscribe" placeholder="E-mail">
+                    <div class="form-subscribe__field">
+                        <label for="subscribe" class="page-footer__heading">Подпишитесь на рассылку</label>
+                        <input type="text" class="form-subscribe__input" name="subscribe" id="subscribe"
+                            placeholder="E-mail">
                     </div>
                     <button type="submit" class="btn-subscribe">Подписаться
-                        <svg class="icon-subscribe" width="24" height="24">
+                        <svg class="form-subscribe__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>

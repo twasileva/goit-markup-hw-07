@@ -39,7 +39,20 @@ ul {
   padding: 0 15px;
 }
 
-.all-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section--gray {
+  background-color: var(--background-gray-color);
+}
+
+.section__heading {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }

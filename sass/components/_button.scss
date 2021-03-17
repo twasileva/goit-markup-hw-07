@@ -1,0 +1,78 @@
+
+/* Оформление кнопки */
+.btn-button {
+  display: block;
+  width: 200px;
+  padding: 10px 32px;
+  margin: 0 auto;
+
+  color: var(--white-text-color);
+  background-color: var(--logo-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.btn-button:hover,
+.btn-button:focus {
+  color: var(--white-text-color-op);
+}
+
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 8px 10px 29px;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--logo-text-color);
+  color: var(--white-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  color: var(--white-text-color-op);
+}
+
+.btn-modal {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 55px;
+  border: 0;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--logo-text-color);
+  color: var(--white-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  color: var(--white-text-color-op);
+}
