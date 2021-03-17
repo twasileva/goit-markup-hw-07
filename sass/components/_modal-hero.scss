@@ -143,13 +143,13 @@
 
 /* CHECKBOX */
 
-.checkbox-field {
+.check-field {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.checkbox-agree {
+.check-field__text {
   color: #757575;
 
   font-size: 14px;
@@ -157,14 +157,14 @@
   letter-spacing: 0.03em;
 }
 
-.checkbox-terms {
+.check-field__link {
   display: inline-block;
   text-decoration: underline;
   color: var(--logo-text-color);
   letter-spacing: 0.03em;
 }
 
-.checkbox {
+.check-field__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -175,24 +175,23 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .check-field__icon {
+    border: none;
+  }
+
+  &:checked + .check-field__vector {
+    opacity: 1;
+  }
 }
 
-.check-icon {
+.check-field__icon {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
 }
 
-.check-icon use {
+.check-field__vector {
   opacity: 0;
 }
-
-.checkbox:checked + .check-icon {
-  border: none;
-}
-
-.checkbox:checked + .check-icon use {
-  opacity: 1;
-}
-
