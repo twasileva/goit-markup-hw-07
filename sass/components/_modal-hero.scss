@@ -26,8 +26,8 @@
   transform: translate(-50%, -50%);
   padding: 40px;
   background-color: var(--white-text-color);
-  max-width: 528px;
-  max-height: 581px;
+  min-width: 528px;
+  min-height: 581px;
 }
 
 .modal-close {
@@ -45,16 +45,17 @@
   outline: none;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-close:hover,
-.modal-close:focus {
-  fill: var(--logo-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--logo-text-color);
+  }
 }
 
 /*  MODAL FORM */
 
 .modal-form {
+  font-family: var(--primary-font-family), sans-serif;
   width: 100%;
 }
 
@@ -103,7 +104,6 @@
   transition: border var(--transition-duration)
     var(--transition-timing-function);
 
-
   &:focus {
     border: 1px solid var(--logo-text-color);
     outline: none;
@@ -115,7 +115,6 @@
     font-size: 16px;
     line-height: 1.25;
   }
-
 }
 
 .modal-form__input--textarea {
@@ -149,6 +148,19 @@
   margin-bottom: 30px;
 }
 
+.check-field__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .check-field__text {
   color: #757575;
 
@@ -164,27 +176,6 @@
   letter-spacing: 0.03em;
 }
 
-.check-field__checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-
-  &:checked + .check-field__icon {
-    border: none;
-  }
-
-  &:checked + .check-field__vector {
-    opacity: 1;
-  }
-}
-
 .check-field__icon {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
@@ -194,4 +185,12 @@
 
 .check-field__vector {
   opacity: 0;
+}
+
+.check-field__checkbox:checked + .check-field__icon {
+  border: none;
+}
+
+.check-field__checkbox:checked ~ .check-field__vector {
+  opacity: 1;
 }

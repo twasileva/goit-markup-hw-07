@@ -1,13 +1,13 @@
+@import './utils/variables';
+@import './base/common';
+@import './base/visually-hidden';
 @import './base/fonts';
 @import './base/normalize';
-@import './utils/variables';
-@import './utils/common';
 @import './components/page-header';
 @import './components/logo';
 @import './components/hero';
 @import './components/button';
 @import './components/modal-hero';
-@import './utils/visually-hidden';
 @import './components/advantage';
 @import './components/work';
 @import './components/team';

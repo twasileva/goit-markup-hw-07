@@ -8,10 +8,10 @@
   width: 270px;
   text-align: center;
   background-color: var(--white-text-color);
-}
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__container {

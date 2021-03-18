@@ -23,13 +23,13 @@
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.socials__link:hover,
-.socials__link:focus {
-  fill: var(--white-text-color);
-  background-color: var(--logo-text-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    fill: var(--white-text-color);
+    background-color: var(--logo-text-color);
+    outline: none;
+  }
 }
 
 .socials__link--color {
@@ -46,13 +46,11 @@
       var(--transition-timing-function),
     fill var(--transition-duration) var(--transition-timing-function);
 
-
   &:hover,
   &:focus {
     background-color: var(--logo-text-color);
     outline: none;
   }
-
 }
 
 .socials__icon {
