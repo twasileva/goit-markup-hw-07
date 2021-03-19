@@ -911,8 +911,8 @@ summary {
           transform: translate(-50%, -50%);
   padding: 40px;
   background-color: var(--white-text-color);
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  max-height: 581px;
 }
 
 .modal-close {
