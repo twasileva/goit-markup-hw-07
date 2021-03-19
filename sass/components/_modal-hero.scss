@@ -191,6 +191,6 @@
   border: none;
 }
 
-.check-field__checkbox:checked ~ .check-field__vector {
+.check-field__checkbox:checked + .check-field__icon use {
   opacity: 1;
 }
